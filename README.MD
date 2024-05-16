@@ -1,3 +1,3 @@
 #Arcade 
 
-a game arcade of stone paper sciossors and number guessing game
+a game arcade consisting of stone paper sciossors and number guessing game
