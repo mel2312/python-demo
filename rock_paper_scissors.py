@@ -5,7 +5,7 @@ Purpose: to get a player choice from player
 Returns: the player choce (int)
 """
 def player_input():
-  player = input(int("Enter your input:"))
+  player = int(input("Enter your input:"))
   return player
 
 def machine_input():

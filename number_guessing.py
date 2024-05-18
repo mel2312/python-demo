@@ -1,7 +1,7 @@
 import random
 
 def player_input():
-  player = input(int("Enter your input between 1 and 3:"))
+  player = int(input("Enter your input between 1 and 3:"))
   return player
 
 def machine_input():
