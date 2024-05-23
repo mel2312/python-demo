@@ -35,9 +35,15 @@ while play:
 
 
         else:
-            print("Paper")
-            ng.game_input()
-            ng.machine_input()
+            print("Welcome to Number Guessing Game")
+            player_input = ng.player_input()
+            machine_input = ng.machine_input()
+            result = ng.desicion(player_input, machine_input)
+            print(f"Computer chose {str(machine_input)} and player chose {str(player_input)}")
+            if result == "Won":
+                print("You won")
+            else:
+                print("Computer won")
             play_again = input("Do you want to play again? y or n")
 
     print("Thanks for playing!")
