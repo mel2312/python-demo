@@ -10,9 +10,12 @@ class rock_paper_scissors(Enum):
 play = True
 while play:
     print("Welcome to arcade world")
-    print("these are the options:\n 1)Rock Paper Scissors\n 2)Number Guessing")
+    print("these are the options:\n 1)Rock Paper Scissors\n 2)Number Guessing \n 3)Quit")
     player = int(input("Which game would you like to play?"))
     play_again = "y"
+    if player == 3:
+        play = False
+
     while (player == 1 or player == 2) and play_again == "y":
         if player == 1:
             print("Lets play Rock Paper Scissors!")
@@ -47,4 +50,3 @@ while play:
             play_again = input("Do you want to play again? y or n")
 
     print("Thanks for playing!")
-    print("Do you want to play again in the arcade? y or n")
