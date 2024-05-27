@@ -1,12 +1,20 @@
 from enum import Enum
+import sys
 import rock_paper_scissors as rpk
 import number_guessing as ng
 
+
+n = len(sys.argv)
+
+
+if n != 2:
+    print("Usage:Python3 main.py <name>")
+    sys.exit("Wrong number of arguments")
 class rock_paper_scissors(Enum):
     rock = 0
     paper = 1
     scissors = 2
-
+print(f"Hi {sys.argv[1]}! You")
 play = True
 while play:
     print("Welcome to arcade world")
